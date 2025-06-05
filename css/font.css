@@ -1,0 +1,60 @@
+.cioccolato {
+	color: #edbf59;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	font-size: 30px ;
+	font-weight: 100px;
+  font-size: 90px;
+  margin-top: 0px;
+  animation: impulso 1s ease-in-out 1 ;
+}
+
+@keyframes impulso {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+ 
+.cioccolato2 {
+  color: rgb(0, 0, 0);
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	font-size: 50px ;
+	font-weight: 90px;
+}.immagine {
+  width: 200px;
+  height: 200px;
+  display: table;
+  margin: 0 auto;
+}.titolo {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  color: var(--lecce-blu);
+  margin-bottom: 30px;
+}
+
+.testo-sezione {
+  max-width: 800px;
+  margin: 40px 20px 20px 40px;
+  text-align: left;
+}.titolo-puntato {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  position: relative;
+  padding-left: 40px;
+}.descrizione-sinistra {
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  color: #333;
+  margin-top: 8px;
+  padding-left: 40px;
+}.spazio-fra-le-cose {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}

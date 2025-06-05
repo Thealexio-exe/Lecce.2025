@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>Statistica sul Lecce</title>
+    <meta charset="UTF-8">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/linee.css" rel="stylesheet">
+    <link href="css/colori.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="foto/legge imagine.png">
+
+    <style>
+      .grafico-box {
+        border: 5px solid var(--lecce-blu);
+        padding: 10px;
+        margin: 20px ;
+        width: fit-content;
+        background-color: #93b0ff;
+        box-shadow: 1 1 15px rgba(0,0,0,0.2);
+        transition: transform 0.4s ease-in-out;
+      }
+      .grafico-box:hover {
+        transform: scale(1.08);
+      }
+
+      @keyframes movimeto_figo {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.05); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="linee">
+
+      <hr class="linea-gialla">
+      <hr class="linea-rosso" style="margin-top: -10px;">
+
+      <h1 class="cioccolato"> <img style="  width: 80px; height: 90px;" src="foto/legge imagine.png"> STATISTICA LECCE 2024/2025<img style="  width: 80px; height: 90px;" src="foto/legge imagine.png"></h1>
+      <MARQUEE style="margin-top: -10px;">By Alessio Argenti</MARQUEE>
+
+      <hr class="linea-gialla">
+      <hr class="linea-rosso" style="margin-top: -10px;">
+
+      <h1 class="titolo"> Tabelle e grafici. </h1>
+
+      <div class="testo-selezione">
+        <h2 class="titolo-puntato">• Tabella Principale</h2>
+        <p class="descrizione-sinistra">Questa tabella raccoglie tutti i dati dei vari giocatori del Lecce che hanno partecipato alla serie A 2025, la tabella contiene i nomi dei giocatori con la rispettiva nazionalità, ruolo, età, presenze, gol e assist. Sotto la tabella ci sono i calcoli su media, moda e mediana di tutti i dati numerici. Oltre alla tabella ci sono ben due grafici dedicati alla gran quantità di gol fatti dai singoli giocatori e per gli Assist.</p>
+      </div>
+
+      <div class="spazio-fra-le-cose">
+        <div class="grafico-box">
+          <iframe width="950" height="750" seamless frameborder="0" scrolling="no"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDK_MfJf9FFrmkiCaClmcMxV0jPrKyhSEOcRvKinMM9NseL_nsSHQeX7gOSmpIIZFLxCxUu7QXYpBf/pubhtml?widget=true&amp;heades=false">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="spazio-fra-le-cose">
+        <div class="grafico-box">
+          <img style="width: 550px; height: 300px;" src="foto/gol_giocatori.png">
+        </div>
+        <div class="grafico-box">
+          <img style="width: 550px; height: 300px;" src="foto/Assist_gol_sigma.png">
+        </div>
+      </div>
+
+      <div class="testo-selezione">
+        <h2 class="titolo-puntato">• Grafici e Tabele su: Vittorie/Pareggi/Scofitte</h2>
+        <p class="descrizione-sinistra">Nella tabella a sinistra sono stai raccolti i dati su: vittorie, pareggi ma soprattutto le sconfitte di questa fantastica squadra; Il grafico a destra è un modo per rappresentare la forza di questa incredibile squadra che ha il 53% di sconfitta</p>
+      </div>
+
+      <div class="spazio-fra-le-cose">  
+        <div class="grafico-box">
+          <iframe width="610" height="280" seamless frameborder="0" scrolling="no"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_8VcXd0RlI-RdTFUJd-a-HvetkJW6YQ7-sjPMSelXOXkv3ctjrhYbpr8yTmXbAA/pubhtml?widget=true&amp;headers=false">
+          </iframe>  
+        </div>
+        <div class="grafico-box">
+        <img id="immagineMessaggio" style="width: 510px; height: 280px;" src="foto/vittorie.png">
+        </div>
+        <script>
+          document.getElementById("immagineMessaggio").addEventListener("click", function() {
+          alert("Questa è solo una imagine non si può interagire ");
+          });
+        </script>
+      </div>
+
+        <div class="testo-selezione">
+          <h2 class="titolo-puntato">• Grafici e Tabelle sui Gol</h2>
+          <p class="descrizione-sinistra">La tabella a sinistra rappresenta tutti i gol fatti e subiti, mentre a destra toviamo il grafico con le percentuali. Grazie a questi dati possiamo dire che il Lecce è per miracolo ancora in serie A</p>
+        </div>
+
+        <div class="spazio-fra-le-cose">
+          <div class="grafico-box">
+            <iframe width="610" height="280" seamless frameborder="0" scrolling="no" 
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSNkrw7bnAtxCyLOyJTpILg3liwT0J_fk9BTtT-KoNhrMjUY8vmWRWoOM4kdvZHuyXoiy1dyz8jPDpY/pubhtml?widget=true&amp;headers=false">
+            </iframe>
+          </div>
+          <div class="grafico-box">
+            <img style="width: 510px; height: 280px;" src="foto/gol.png">
+          </div>
+        </div>
+
+        <div class="testo-selezione">
+          <p class="descrizione-sinistra">Questo sito è stato realizato per un progetto di scuola, non è nulla di ufficiale.</p>
+          <a class="descrizione-sinistra" href="https://www.legaseriea.it/it/serie-a/classifica">Sito Ufficiale serie A</a>
+          <a class="descrizione-sinistra" href="https://www.uslecce.it/">Sito Ufficiale Lecce</a>
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
